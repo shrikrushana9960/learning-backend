@@ -2,6 +2,8 @@
 
 backend api for starting learning template with express
 [Frontend](https://github.com/shrikrushana9960/learning-template/tree/main)
+## check out live website
+[Demo](https://shrikrushana9960.github.io/learning-template/)
 ## Installation
 
 how to run
