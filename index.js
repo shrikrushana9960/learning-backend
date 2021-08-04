@@ -7,7 +7,7 @@ const courseRoute = require("./routes/course");
 app.use(cors());
 dotenv.config();
 app.use(express.json());
-
+const port=process.env.PORT;
 mongoose
   .connect(process.env.MONGO_URL, {
     useNewUrlParser: true,
@@ -24,6 +24,6 @@ mongoose
 
 app.use("/api/course", courseRoute);
 
-app.listen("5000", () => {
-  console.log("Backend is running.");
+app.listen(port, () => {
+  console.log(`Backend is running.${port}`);
 });
